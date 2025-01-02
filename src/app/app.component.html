@@ -1,6 +1,7 @@
 <div class="container">
-  <h1>Item List</h1>
-  
+  <h1>Item List Search, Pagination  Task</h1>
+  <!-- <div class="container"> -->
+
   <!-- Search Bar -->
   <mat-form-field appearance="fill">
     <mat-label>Search</mat-label>
@@ -29,9 +30,11 @@
   </table>
 
   <!-- Pagination -->
-  <mat-paginator [length]="items.length"
+   
+  <mat-paginator [length]="totalItems"
                  [pageSize]="pageSize"
-                 [pageSizeOptions]="[5, 10, 20]"
-                 (page)="onPageChanged($event)">
+                 [pageSizeOptions]="[5, 10, 25, 100]"
+                 (page)="onPageChange($event)">
   </mat-paginator>
 </div>
+<!-- </div> -->
