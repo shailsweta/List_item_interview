@@ -1,0 +1,9 @@
+<!-- <li *ngFor="let item of data">
+    {{ item.name }}
+    </li> -->
+
+    <ul>
+        @for (item of list; track $index) {
+            <li>{{item.name}}</li>
+        }
+    </ul>
